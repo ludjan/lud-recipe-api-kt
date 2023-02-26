@@ -1,0 +1,1 @@
+web: java -jar build/libs/lud-recipe-api-kt.jar --server.port=$PORT
