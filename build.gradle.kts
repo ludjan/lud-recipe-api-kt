@@ -33,5 +33,6 @@ dependencies {
 }
 
 tasks {
-    create("stage").dependsOn("installDist")
+    create("stage")
+        .dependsOn("installDist")
 }
