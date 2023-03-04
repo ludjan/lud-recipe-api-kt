@@ -9,7 +9,6 @@ fun main() {
 
     val port = findPort()
 
-
     embeddedServer(
         Netty,
         port = port,
