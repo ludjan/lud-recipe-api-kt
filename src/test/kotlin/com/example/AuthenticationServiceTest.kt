@@ -15,6 +15,6 @@ class AuthenticationServiceTest {
 
     @Test
     fun goodToken() {
-        assertTrue(authenticationService.validateToken("not-a-secret"))
+        assertTrue(authenticationService.validateToken("Bearer not-a-secret"))
     }
 }
