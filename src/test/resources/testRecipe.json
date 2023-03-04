@@ -1,0 +1,69 @@
+{
+  "title": "Pancakes",
+  "description": "Delicious pancakes",
+  "portions": 3,
+  "ingredientQuantityUnits": [
+    {
+      "ingredient": {
+        "name": "Milk"
+      },
+      "quantity": 6,
+      "unit": {
+        "singularName": "deciliter",
+        "pluralName": "deciliter"
+      }
+    },
+    {
+      "ingredient": {
+        "name": "Flour"
+      },
+      "quantity": 3,
+      "unit": {
+        "singularName": "deciliter",
+        "pluralName": "deciliter"
+      }
+    },
+    {
+      "ingredient": {
+        "name": "Egg"
+      },
+      "quantity": 4,
+      "unit": {
+        "singularName": "piece",
+        "pluralName": "pieces"
+      }
+    },
+    {
+      "ingredient": {
+        "name": "Salt"
+      },
+      "quantity": 1,
+      "unit": {
+        "singularName": "dash",
+        "pluralName": "dashes"
+      }
+    }
+  ],
+  "steps": [
+    {
+      "index": 1,
+      "description": "Mix flour and half of the milk"
+    },
+    {
+      "index": 2,
+      "description": "Mix in the rest of the milk"
+    },
+    {
+      "index": 3,
+      "description": "Mix in the eggs"
+    },
+    {
+      "index": 4,
+      "description": "Mix in the salt"
+    },
+    {
+      "index": 5,
+      "description": "Fry the mix in a pan"
+    }
+  ]
+}

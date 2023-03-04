@@ -7,5 +7,5 @@ object Provider {
 
     val recipeRepository = RecipeRepository()
     val recipeService = RecipeService()
-
+    val authenticationService = AuthenticationService()
 }

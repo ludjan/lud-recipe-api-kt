@@ -4,6 +4,9 @@ import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
 import com.example.plugins.*
+import com.example.recipe.model.Recipe
+import io.ktor.server.plugins.requestvalidation.RequestValidation
+import io.ktor.server.plugins.requestvalidation.ValidationResult
 
 fun main() {
 
@@ -24,6 +27,12 @@ fun findPort() =
     }
 
 fun Application.module() {
+    install(RequestValidation) {
+        validate<Recipe> { recipe ->
+            if (recipe.id <= 0) ValidationResult.Invalid("A recipe cannot have id 0")
+            else ValidationResult.Valid
+        }
+    }
     configureSerialization()
     configureHTTP()
     configureSecurity()

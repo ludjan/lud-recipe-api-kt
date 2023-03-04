@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.recipe.createRecipe
 import com.example.recipe.getEvenRecipes
 import com.example.recipe.getOddRecipes
 import com.example.recipe.getRecipeRoute
@@ -18,6 +19,7 @@ fun Application.configureRouting() {
         getEvenRecipes()
         getOddRecipes()
         getRecipeRoute()
+        createRecipe()
     }
 }
 
